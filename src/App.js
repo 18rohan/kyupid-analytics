@@ -1,9 +1,11 @@
 import "./App.css";
+// Import Components
+import Dashboard from "./Pages/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <h1>Kyupid App</h1>
+      <Dashboard />
     </div>
   );
 }
