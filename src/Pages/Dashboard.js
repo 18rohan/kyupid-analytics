@@ -1,12 +1,16 @@
 import React from "react";
-
+import MapsContainer from "../Components/MapsContainer";
 const Dashboard = () => {
   return (
     <div className="dashboard">
       {/* Sidebar */}
-      <div className="sidebar">Sidebar</div>
+      <div className="sidebar">
+        <h1>Sidebar</h1>
+      </div>
       {/* Maps-container */}
-      <div className="maps-container">Maps Container</div>
+      <div className="dashboard-container">
+        <MapsContainer />
+      </div>
     </div>
   );
 };

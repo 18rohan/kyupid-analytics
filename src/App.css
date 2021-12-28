@@ -1,29 +1,76 @@
 .App {
   text-align: center;
 }
+h1 {
+  color:rgba(0,0,0,0.9) !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+}
 
 .dashboard {
   display:flex;
   width: 100%;
   height: 100vh;
   flex-direction: row;
-  background-color: #ffff;
+  background-color: #f1f1f5;
 }
-.dashboard h1 {
-  color:#fff;
-}
+
 .maps-container {
-  width:75%;
+  width:100%;
   height:100vh;
+  padding:10px;
+  
+  z-index: 10;
   display:flex;
+  background: #f1f1f5;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  
+  
+  
+}
+.maps-container h1 {
+  color:#fffffe;
+}
+.dashboard-container {
+  width:75%;
+  padding:6px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.buttons {
+  background-color: #fff;
+  width:30%;
+  border-radius:10px;
 }
 .sidebar {
   width:25%;
   display:flex;
   justify-content: center;
-  align-items:center;
-  background-color: #efefef;
+  align-items:flex-start;
+  background-color: #f1f1f5;
+  backdrop-filter: blur(10px);
+  border-right: 0.2px solid #c0bcbc;
 }
+.map-container {
+  
+  
+  height: 650px;
+  width:100%;
+  border-radius: 12px;
+  box-shadow: 0 0 5px 10px #f1f1f5;
+  
+  }
+  .map-sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
+    }
